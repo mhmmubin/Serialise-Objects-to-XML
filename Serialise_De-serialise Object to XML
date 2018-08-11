@@ -16,7 +16,7 @@
 
 
 
- T objectFromXml = default(T);
+            T objectFromXml = default(T);
             var serializer = new XmlSerializer(typeof(T));
             StorageFolder folder = ApplicationData.Current.LocalFolder;
             StorageFile file = await folder.GetFileAsync(filename);
